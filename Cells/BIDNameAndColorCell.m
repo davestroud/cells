@@ -17,12 +17,22 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        
         CGRect nameLabelRect = CGRectMake(0, 5, 70, 15);
         UILabel *nameLabel = [[UILabel alloc] initWithFrame:nameLabelRect];
         nameLabel.textAlignment = NSTextAlignmentRight;
         nameLabel.text = @"Name";
         nameLabel.font = [UIFont boldSystemFontOfSize:12];
         [self.contentView addSubview:nameLabel];
+        
+        CGRect colorLabelRect = CGRectMake(0, 26, 70, 15);
+        UILabel *colorLabel = [[UILabel alloc] initWithFrame:colorLabelRect];
+        colorLabel.textAlignment = NSTextAlignmentRight;
+        colorLabel.text = @"Color";
+        colorLabel.font = [UIFont boldSystemFontOfSize:12];
+        [self.contentView addSubview:colorLabel];
+        
+        
         
         
     }
