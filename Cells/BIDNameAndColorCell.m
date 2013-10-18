@@ -8,13 +8,23 @@
 
 #import "BIDNameAndColorCell.h"
 
-@implementation BIDNameAndColorCell
+@implementation BIDNameAndColorCell {
+    UILabel *_nameValue;
+    UILabel *_colorValue;
+}
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+        CGRect nameLabelRect = CGRectMake(0, 5, 70, 15);
+        UILabel *nameLabel = [[UILabel alloc] initWithFrame:nameLabelRect];
+        nameLabel.textAlignment = NSTextAlignmentRight;
+        nameLabel.text = @"Name";
+        nameLabel.font = [UIFont boldSystemFontOfSize:12];
+        [self.contentView addSubview:nameLabel];
+        
+        
     }
     return self;
 }
