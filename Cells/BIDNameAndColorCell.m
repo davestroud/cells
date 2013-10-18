@@ -32,6 +32,10 @@
         colorLabel.font = [UIFont boldSystemFontOfSize:12];
         [self.contentView addSubview:colorLabel];
         
+        CGRect nameValueRect = CGRectMake(80, 5, 200, 15);
+        _nameValue = [[UILabel alloc]initWithFrame:nameValueRect];
+        [self.contentView addSubview:_nameValue];
+        
         
         
         
