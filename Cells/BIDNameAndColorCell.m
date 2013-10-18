@@ -36,8 +36,9 @@
         _nameValue = [[UILabel alloc]initWithFrame:nameValueRect];
         [self.contentView addSubview:_nameValue];
         
-        
-        
+        CGRect colorValueRect = CGRectMake(80, 25, 200, 15);
+        _colorValue = [[UILabel alloc]initWithFrame:colorValueRect];
+        [self.contentView addSubview:_colorValue];
         
     }
     return self;
