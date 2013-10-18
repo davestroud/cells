@@ -21,6 +21,7 @@
 		634A495C18116A2D002DDF3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634A493E18116A2C002DDF3D /* UIKit.framework */; };
 		634A496418116A2D002DDF3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 634A496218116A2D002DDF3D /* InfoPlist.strings */; };
 		634A496618116A2D002DDF3D /* CellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A496518116A2D002DDF3D /* CellsTests.m */; };
+		634A497118116D6D002DDF3D /* BIDNameAndColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		634A496118116A2D002DDF3D /* CellsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CellsTests-Info.plist"; sourceTree = "<group>"; };
 		634A496318116A2D002DDF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		634A496518116A2D002DDF3D /* CellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellsTests.m; sourceTree = "<group>"; };
+		634A496F18116D6D002DDF3D /* BIDNameAndColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDNameAndColorCell.h; sourceTree = "<group>"; };
+		634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDNameAndColorCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				634A495018116A2D002DDF3D /* BIDViewController.m */,
 				634A495218116A2D002DDF3D /* Images.xcassets */,
 				634A494118116A2C002DDF3D /* Supporting Files */,
+				634A496F18116D6D002DDF3D /* BIDNameAndColorCell.h */,
+				634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			files = (
 				634A494B18116A2C002DDF3D /* BIDAppDelegate.m in Sources */,
 				634A495118116A2D002DDF3D /* BIDViewController.m in Sources */,
+				634A497118116D6D002DDF3D /* BIDNameAndColorCell.m in Sources */,
 				634A494718116A2C002DDF3D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
