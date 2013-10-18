@@ -13,7 +13,6 @@
 		634A494518116A2C002DDF3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 634A494318116A2C002DDF3D /* InfoPlist.strings */; };
 		634A494718116A2C002DDF3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A494618116A2C002DDF3D /* main.m */; };
 		634A494B18116A2C002DDF3D /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A494A18116A2C002DDF3D /* BIDAppDelegate.m */; };
-		634A494E18116A2C002DDF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634A494C18116A2C002DDF3D /* Main.storyboard */; };
 		634A495118116A2D002DDF3D /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A495018116A2D002DDF3D /* BIDViewController.m */; };
 		634A495318116A2D002DDF3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634A495218116A2D002DDF3D /* Images.xcassets */; };
 		634A495A18116A2D002DDF3D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634A495918116A2D002DDF3D /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		634A496418116A2D002DDF3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 634A496218116A2D002DDF3D /* InfoPlist.strings */; };
 		634A496618116A2D002DDF3D /* CellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A496518116A2D002DDF3D /* CellsTests.m */; };
 		634A497118116D6D002DDF3D /* BIDNameAndColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */; };
+		63792E30181199D700E3109A /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63792E2F181199D700E3109A /* BIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 		634A494818116A2C002DDF3D /* Cells-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cells-Prefix.pch"; sourceTree = "<group>"; };
 		634A494918116A2C002DDF3D /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
 		634A494A18116A2C002DDF3D /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
-		634A494D18116A2C002DDF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		634A494F18116A2D002DDF3D /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		634A495018116A2D002DDF3D /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		634A495218116A2D002DDF3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		634A496518116A2D002DDF3D /* CellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellsTests.m; sourceTree = "<group>"; };
 		634A496F18116D6D002DDF3D /* BIDNameAndColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDNameAndColorCell.h; sourceTree = "<group>"; };
 		634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDNameAndColorCell.m; sourceTree = "<group>"; };
+		63792E2F181199D700E3109A /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BIDViewController.xib; path = ../BIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +117,9 @@
 			children = (
 				634A496F18116D6D002DDF3D /* BIDNameAndColorCell.h */,
 				634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */,
-				634A494C18116A2C002DDF3D /* Main.storyboard */,
 				634A494F18116A2D002DDF3D /* BIDViewController.h */,
 				634A495018116A2D002DDF3D /* BIDViewController.m */,
+				63792E2F181199D700E3109A /* BIDViewController.xib */,
 				634A495218116A2D002DDF3D /* Images.xcassets */,
 				634A494118116A2C002DDF3D /* Supporting Files */,
 			);
@@ -234,9 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63792E30181199D700E3109A /* BIDViewController.xib in Resources */,
 				634A495318116A2D002DDF3D /* Images.xcassets in Resources */,
 				634A494518116A2C002DDF3D /* InfoPlist.strings in Resources */,
-				634A494E18116A2C002DDF3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +287,6 @@
 				634A494418116A2C002DDF3D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		634A494C18116A2C002DDF3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				634A494D18116A2C002DDF3D /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		634A496218116A2D002DDF3D /* InfoPlist.strings */ = {
@@ -467,6 +459,7 @@
 				634A496B18116A2D002DDF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		634A496C18116A2D002DDF3D /* Build configuration list for PBXNativeTarget "CellsTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +468,7 @@
 				634A496E18116A2D002DDF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,7 @@
 
 @interface BIDViewController : UIViewController
 <UITableViewDataSource, UITableViewDelegate>
+
 @property(copy,nonatomic) NSArray *computers;
 
 @end

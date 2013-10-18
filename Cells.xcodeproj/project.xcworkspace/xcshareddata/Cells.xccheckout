@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D3363745-33EA-4658-90B2-B1952F048A3D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Cells</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>67C6E153-7005-4E9D-B69E-5591278C714B</key>
+		<string>ssh://github.com/davestroud/cells.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Cells.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>67C6E153-7005-4E9D-B69E-5591278C714B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/davestroud/cells.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>67C6E153-7005-4E9D-B69E-5591278C714B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67C6E153-7005-4E9D-B69E-5591278C714B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cells</string>
+		</dict>
+	</array>
+</dict>
+</plist>

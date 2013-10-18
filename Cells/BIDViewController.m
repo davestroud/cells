@@ -2,16 +2,9 @@
 //  BIDViewController.m
 //  Cells
 //
-//  Created by DAVID STROUD on 10/18/13.
-//  Copyright (c) 2013 Grey Matter. All rights reserved.
-//
 
 #import "BIDViewController.h"
 #import "BIDNameAndColorCell.h"
-
-@interface BIDViewController ()
-
-@end
 
 @implementation BIDViewController
 
@@ -21,32 +14,34 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 {
     [super viewDidLoad];
     
-	self.computers = @[
-  @{@"Name" : @"MacBook", @"Color" : @"White"},
-  @{@"Name": @"MacBook Pro", @"Color" : @"Silver"},
-  @{@"Name": @"iMac", @"Color" : @"Silver"},
-  @{@"Name" : @"Mac Mini", @"Color" : @"Silver"}];
+    self.computers = @[
+                       @{@"Name" : @"MacBook", @"Color" : @"White"},
+                       @{@"Name" : @"MacBook Pro", @"Color" : @"Silver"},
+                       @{@"Name" : @"iMac", @"Color" : @"Silver"},
+                       @{@"Name" : @"Mac Mini", @"Color" : @"Silver"},
+                       @{@"Name" : @"Mac Pro", @"Color" : @"Silver"}];
     
-    UITableView *tableview = (id) [self.view viewWithTag:1];
-    [tableview registerClass:[BIDNameAndColorCell class] forCellReuseIdentifier:CellTableIdentifier];
+    UITableView *tableView = (id)[self.view viewWithTag:1];
+    tableView.rowHeight = 65;
+    UINib *nib = [UINib nibWithNibName:@"BIDNameAndColorCell"
+                                bundle:nil];
+    [tableView registerNib:nib
+    forCellReuseIdentifier:CellTableIdentifier];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - 
-#pragma mark Table Date Source Methods
-- (NSInteger) tableView: (UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+#pragma mark -
+#pragma mark Table Data Source Methods
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
 {
     return [self.computers count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BIDNameAndColorCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:CellTableIdentifier];
+    
+    BIDNameAndColorCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
     
     NSDictionary *rowData = self.computers[indexPath.row];
     
@@ -55,19 +50,5 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
     return cell;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @end

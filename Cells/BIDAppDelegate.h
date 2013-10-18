@@ -2,14 +2,15 @@
 //  BIDAppDelegate.h
 //  Cells
 //
-//  Created by DAVID STROUD on 10/18/13.
-//  Copyright (c) 2013 Grey Matter. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
+
+@class BIDViewController;
 
 @interface BIDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) BIDViewController *viewController;
 
 @end
