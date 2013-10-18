@@ -51,4 +51,20 @@
     // Configure the view for the selected state
 }
 
+- (void)setName:(NSString *)n
+{
+    if(![n isEqualToString:_name])  {
+        _name = [n copy];
+        _nameValue.text = _name;
+    }
+}
+
+- (void)setColor:(NSString *)c
+{
+    if (![c isEqualToString:_color]) {
+        _color = [c copy];
+        _colorValue.text = _color;
+    }
+}
+
 @end
