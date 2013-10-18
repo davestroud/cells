@@ -7,6 +7,7 @@
 //
 
 #import "BIDViewController.h"
+#import "BIDNameAndColorCell.h"
 
 @interface BIDViewController ()
 
@@ -14,10 +15,20 @@
 
 @implementation BIDViewController
 
+static NSString *CellTableIdentifier = @"CellTableIdentifier";
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+	self.computers = @[
+  @{@"Name" : @"MacBook", @"Color" : @"White"},
+  @{@"Name": @"MacBook Pro", @"Color" : @"Silver"},
+  @{@"Name": @"iMac", @"Color" : @"Silver"},
+  @{@"Name" : @"Mac Mini", @"Color" : @"Silver"}];
+    
+    UITableView *tableview = (id) [self.view viewWithTag:1];
+    [tableview registerClass:[BIDNameAndColorCell class] forCellReuseIdentifier:CellTableIdentifier];
 }
 
 - (void)didReceiveMemoryWarning

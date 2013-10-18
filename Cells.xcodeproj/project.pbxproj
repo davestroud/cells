@@ -115,15 +115,13 @@
 		634A494018116A2C002DDF3D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				634A494918116A2C002DDF3D /* BIDAppDelegate.h */,
-				634A494A18116A2C002DDF3D /* BIDAppDelegate.m */,
+				634A496F18116D6D002DDF3D /* BIDNameAndColorCell.h */,
+				634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */,
 				634A494C18116A2C002DDF3D /* Main.storyboard */,
 				634A494F18116A2D002DDF3D /* BIDViewController.h */,
 				634A495018116A2D002DDF3D /* BIDViewController.m */,
 				634A495218116A2D002DDF3D /* Images.xcassets */,
 				634A494118116A2C002DDF3D /* Supporting Files */,
-				634A496F18116D6D002DDF3D /* BIDNameAndColorCell.h */,
-				634A497018116D6D002DDF3D /* BIDNameAndColorCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -131,6 +129,8 @@
 		634A494118116A2C002DDF3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				634A494918116A2C002DDF3D /* BIDAppDelegate.h */,
+				634A494A18116A2C002DDF3D /* BIDAppDelegate.m */,
 				634A494218116A2C002DDF3D /* Cells-Info.plist */,
 				634A494318116A2C002DDF3D /* InfoPlist.strings */,
 				634A494618116A2C002DDF3D /* main.m */,
