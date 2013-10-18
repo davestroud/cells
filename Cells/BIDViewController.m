@@ -37,4 +37,37 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - 
+#pragma mark Table Date Source Methods
+- (NSInteger) tableView: (UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.computers count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BIDNameAndColorCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:CellTableIdentifier];
+    
+    NSDictionary *rowData = self.computers[indexPath.row];
+    
+    cell.name = rowData[@"Name"];
+    cell.color = rowData[@"Color"];
+    
+    return cell;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end
