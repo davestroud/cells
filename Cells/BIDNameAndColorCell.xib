@@ -39,6 +39,10 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="colorValue" destination="DLY-OL-DuB" id="znl-UO-zxf"/>
+                <outlet property="nameValue" destination="pAR-xx-BSD" id="vSB-39-pzh"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
