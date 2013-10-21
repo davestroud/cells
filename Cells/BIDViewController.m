@@ -41,6 +41,10 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
     BIDNameAndColorCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
     
+    if (!cell) {
+        cell = [[BIDNameAndColorCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellTableIdentifier];
+    }
+    
     NSDictionary *rowData = self.computers[indexPath.row];
     
     cell.name = rowData[@"Name"];

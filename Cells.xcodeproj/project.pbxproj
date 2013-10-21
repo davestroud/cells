@@ -20,9 +20,9 @@
 		634A495C18116A2D002DDF3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634A493E18116A2C002DDF3D /* UIKit.framework */; };
 		634A496418116A2D002DDF3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 634A496218116A2D002DDF3D /* InfoPlist.strings */; };
 		634A496618116A2D002DDF3D /* CellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A496518116A2D002DDF3D /* CellsTests.m */; };
-		63792E30181199D700E3109A /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63792E2F181199D700E3109A /* BIDViewController.xib */; };
 		63792E331811CEE500E3109A /* BIDNameAndColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63792E321811CEE500E3109A /* BIDNameAndColorCell.m */; };
 		63792E351811D09D00E3109A /* BIDNameAndColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63792E341811D09D00E3109A /* BIDNameAndColorCell.xib */; };
+		63C3B6B61815E5D500DA6C73 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C3B6B51815E5D500DA6C73 /* BIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +54,10 @@
 		634A496118116A2D002DDF3D /* CellsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CellsTests-Info.plist"; sourceTree = "<group>"; };
 		634A496318116A2D002DDF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		634A496518116A2D002DDF3D /* CellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellsTests.m; sourceTree = "<group>"; };
-		63792E2F181199D700E3109A /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BIDViewController.xib; path = ../BIDViewController.xib; sourceTree = "<group>"; };
 		63792E311811CEE500E3109A /* BIDNameAndColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDNameAndColorCell.h; sourceTree = "<group>"; };
 		63792E321811CEE500E3109A /* BIDNameAndColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDNameAndColorCell.m; sourceTree = "<group>"; };
 		63792E341811D09D00E3109A /* BIDNameAndColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDNameAndColorCell.xib; sourceTree = "<group>"; };
+		63C3B6B51815E5D500DA6C73 /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BIDViewController.xib; path = ../BIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 				63792E341811D09D00E3109A /* BIDNameAndColorCell.xib */,
 				634A494F18116A2D002DDF3D /* BIDViewController.h */,
 				634A495018116A2D002DDF3D /* BIDViewController.m */,
-				63792E2F181199D700E3109A /* BIDViewController.xib */,
+				63C3B6B51815E5D500DA6C73 /* BIDViewController.xib */,
 				634A495218116A2D002DDF3D /* Images.xcassets */,
 				634A494118116A2C002DDF3D /* Supporting Files */,
 			);
@@ -237,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63792E30181199D700E3109A /* BIDViewController.xib in Resources */,
+				63C3B6B61815E5D500DA6C73 /* BIDViewController.xib in Resources */,
 				634A495318116A2D002DDF3D /* Images.xcassets in Resources */,
 				63792E351811D09D00E3109A /* BIDNameAndColorCell.xib in Resources */,
 				634A494518116A2C002DDF3D /* InfoPlist.strings in Resources */,
