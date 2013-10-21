@@ -6,11 +6,12 @@
 #import "BIDNameAndColorCell.h"
 
 @implementation BIDNameAndColorCell {
-    UILabel *_nameValue;
-    UILabel *_colorValue;
+    // deleted because we have these outlets and dont need them as instance variables
+    //UILabel *_nameValue;
+    //UILabel *_colorValue;
 }
-
-- (id)initWithStyle:(UITableViewCellStyle)style
+//  all setup is done in interface builder - dont need this method
+/*- (id)initWithStyle:(UITableViewCellStyle)style
     reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -40,7 +41,7 @@
         [self.contentView addSubview:_colorValue];
     }
     return self;
-}
+} */
 
 - (void)setName:(NSString *)n
 {
