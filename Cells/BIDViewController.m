@@ -23,10 +23,8 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
     UITableView *tableView = (id)[self.view viewWithTag:1];
     tableView.rowHeight = 65;
-    UINib *nib = [UINib nibWithNibName:@"BIDNameAndColorCell"
-                                bundle:nil];
-    [tableView registerNib:nib
-    forCellReuseIdentifier:CellTableIdentifier];
+    UINib *nib = [UINib nibWithNibName:@"BIDNameAndColorCell" bundle:nil];
+    [tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];
 }
 
 #pragma mark -
